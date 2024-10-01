@@ -1,0 +1,45 @@
+/*HEADER*/
+header{
+    /*ORDEN*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /*COLOR*/
+    background-color: gray;
+
+    /*TAMAÑO*/
+    width:100%;
+    height: 5%;
+}
+
+header nav{
+    /*ORDEN*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+
+    /*TAMAÑO*/
+    width: 40%;
+}
+
+
+/*MEDIA QUERIES*/
+
+/*MOVILES*/
+@media (max-width: 768px){
+    header{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        /*TAMAÑO*/
+        width:100%;
+        height: 10%;
+    }
+
+    header nav{
+    }
+}
