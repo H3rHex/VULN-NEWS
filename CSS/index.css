@@ -1,19 +1,4 @@
 /*PAGINA PRINCIPAL*/
-body{
-    background: rgb(36,36,36);
-    background: linear-gradient(45deg, rgba(36,36,36,1) 0%, rgba(82,82,82,1) 50%, rgba(36,36,36,1) 100%);   
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 main{
-    width: 60%;
-    
-}
-
-/*IMAGENES*/
-#vulnewsicon{
-    /*TAMAÑO*/
-    width: 15%;
-    height: 12%;
+    width: 60%;   
 }
