@@ -1,0 +1,66 @@
+@import url(./global/general.css);
+
+
+/*PAGINA PRINCIPAL*/
+main{
+    width: 60%;   
+}
+
+#tipsDeSeguridad{
+    /*ORDEN*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    /*TAMAÑO*/
+    width: 75%;
+}
+
+#tipsDeSeguridad h2{
+    /*ORDEN*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /*COLOR*/
+    background-color: var(--beige-claro);
+    box-shadow: 0 0 5px  rgba(0, 0, 0, 0.2);
+
+    /*TAMAÑOS Y BORDER*/
+    border-radius: 10px;
+    width: 500px;
+
+    padding: 10px;
+    margin: 20px;
+
+    /*ANIMACION DE SCROLL*/
+    view-timeline-name: --seccionTittle;
+        view-timeline-axis: block;
+    
+        animation-timeline: --seccionTittle;
+        animation-name: aparecerPorLaIzquierda;
+    
+        animation-range: entry 1% cover 30%;
+        animation-fill-mode: both;
+
+}
+
+#tipsDeSeguridad h3{
+    /*Estilos texto*/
+    text-align: justify;
+    font-family: 'SourceCode-Italic';
+    font-size: 1.2rem;
+
+    width: 65%;
+
+}
+
+#tipsDeSeguridad p{
+    /*Estilos texto*/
+    text-align: justify;
+    width: 60%;
+
+    /*PADDINGS Y MARGENES*/
+    padding: 20px;
+}

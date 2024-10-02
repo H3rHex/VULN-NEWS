@@ -1,0 +1,76 @@
+/*GLOBAL IMPORTS*/
+@font-face {/*PARRAFOS...*/
+    font-family: 'SourceCode-Regular';
+    src: url(../../ASSETS/FONTS/SourceCodePro-VariableFont_wght.ttf);
+    /*Link del recurso: https://fonts.google.com/download/next-steps*/
+}
+
+@font-face {/**/
+    font-family: 'SourceCode-Italic';
+    src: url(../../ASSETS/FONTS/SourceCodePro-Italic-VariableFont_wght.ttf);
+    /*Link del recurso: https://fonts.google.com/download/next-steps*/
+}
+
+@font-face {/*Titulos,  encabezados...*/
+    font-family: 'RockwellCondensed';
+    src: url(../../ASSETS/FONTS/rockwell-condensed.ttf);
+    /*Link de recurso https://en.maisfontes.com/rockwell-condensed.font*/
+}
+
+/*ANIMACIONES*/
+@keyframes aparecerPorLaIzquierda {
+    from{
+        opacity: 0;
+        transform: translate(-50%);
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+:root{
+    --blanco-suave : #F5F5F5; /*Para fondos*/
+    --gris-claro : #dadada;  /*Para header y footer*/
+    --beige-claro: #F0EAD6; /*Otros*/
+}
+
+/*SCROLL BAR*/
+::-webkit-scrollbar-button{
+    display: none;
+}
+::-webkit-scrollbar{
+    width: 6px;
+    height: 1px;
+    background-color: #000000;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #ff0000;
+    border-radius: 35px;
+}
+
+/*GLOBAL STYLES*/
+*{
+    margin: 0 auto;
+}
+
+body{
+    /*ORDEN*/
+    display: flex;
+    flex-direction: column;
+
+    /*TAMAÑO*/
+    width: 100%;
+    height: 100vh;
+
+    /*FONDO*/
+    background-color: var(--blanco-suave);
+}
+
+header, footer{
+    background-color: var(--gris-claro);
+}
+
+
+
+

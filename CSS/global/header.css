@@ -1,0 +1,116 @@
+@import url(./general.css);
+
+/*HEADER*/
+header{
+    /*ORDEN*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /*BORDES*/
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    /*FILTROS*/
+    box-shadow: 0px 0px 15px rgba(0, 0, 0);
+
+    /*MARGENES*/
+    margin-bottom: 50px;
+
+    /*TAMAÑO*/
+    width:100%;
+    height: 10%;
+
+}
+
+/*Hay dos divs*/
+header div{
+    width: 50%;
+}
+
+/*MENU NAVEGACION*/
+header nav{
+    /*ORDEN*/
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+
+    /*TAMAÑO*/
+    width: 100%;
+}
+/*LINKS*/
+header nav a{
+    /*COLOR*/
+    color: #000000;
+
+    /*TAMAÑO Y FUENTE*/
+    font-size: 2.3rem;    
+    font-family: 'RockwellCondensed', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    /*OTROS*/
+    text-align: center;
+    text-decoration: none;
+    filter: drop-shadow(2px 3px  1px rgba(255, 255, 255, 0.637));
+}
+
+header nav div{
+    width: auto;
+    transition: 0.1s;
+}
+
+header nav div:hover{
+    transform: scale(1.1);
+    filter: drop-shadow(2px 1px 5px  rgb(0, 0, 0));
+
+    border-radius: 5px;
+}
+
+/*LOGO VULN NEWS*/
+#vulnewsicon{
+    /*TAMAÑO*/
+    width: 20%;
+    height: 10%;
+    
+    /*MARGENES*/
+    margin-left: 40px;
+    filter: drop-shadow(2px 1px 5px  rgb(0, 0, 0));
+    transition: all 0.1s ease-out;
+}
+
+/*LOGO VULN NEWS*/
+#vulnewsicon:hover{
+    transform: scale(1.1);
+}
+
+/*MEDIA QUERIES*/
+
+/*MOVILES*/
+@media (max-width: 768px){
+    /*HEADER*/
+    header{
+        /*TAMAÑO*/
+        width:100%;
+        height: 14%;
+    }
+
+    header div{
+        /*MARGENES*/
+        margin-right: 20px;
+    }
+
+    /*LINKS*/
+    header nav a{
+        /*TAMAÑO Y FUENTE*/
+        font-size: 25px;    
+    }
+
+    
+
+    /*LOGO VULN NEWS*/
+    #vulnewsicon{
+        width: 50%;
+        height: 40%;
+    }
+
+
+}
