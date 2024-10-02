@@ -1,16 +1,53 @@
 /*GLOBAL IMPORTS*/
-@font-face { /*LINKS NAVEGACION, TITULOS RELEVANTES...*/
-    font-family: 'GlitchGoblin';
-    src: url(../../ASSETS/FONTS/GlitchGoblin-2O87v.ttf);
-    /*Link del recurso: https://www.fontspace.com/glitch-goblin-font-f94950*/
-}
-
 @font-face {/*PARRAFOS...*/
-    font-family: 'SourceCode';
-    src: url();
+    font-family: 'SourceCode-Regular';
+    src: url(../../ASSETS/FONTS/SourceCodePro-VariableFont_wght.ttf);
+    /*Link del recurso: https://fonts.google.com/download/next-steps*/
 }
 
+@font-face {/**/
+    font-family: 'SourceCode-Italic';
+    src: url(../../ASSETS/FONTS/SourceCodePro-Italic-VariableFont_wght.ttf);
+    /*Link del recurso: https://fonts.google.com/download/next-steps*/
+}
 
+@font-face {/*Titulos,  encabezados...*/
+    font-family: 'RockwellCondensed';
+    src: url(../../ASSETS/FONTS/rockwell-condensed.ttf);
+    /*Link de recurso https://en.maisfontes.com/rockwell-condensed.font*/
+}
+
+/*ANIMACIONES*/
+@keyframes aparecerPorLaIzquierda {
+    from{
+        opacity: 0;
+        transform: translate(-50%);
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+:root{
+    --blanco-suave : #F5F5F5; /*Para fondos*/
+    --gris-claro : #dadada;  /*Para header y footer*/
+    --beige-claro: #F0EAD6; /*Otros*/
+}
+
+/*SCROLL BAR*/
+::-webkit-scrollbar-button{
+    display: none;
+}
+::-webkit-scrollbar{
+    width: 6px;
+    height: 1px;
+    background-color: #000000;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #ff0000;
+    border-radius: 35px;
+}
 
 /*GLOBAL STYLES*/
 *{
@@ -27,9 +64,13 @@ body{
     height: 100vh;
 
     /*FONDO*/
-    background: rgb(179,179,179);
-    background: linear-gradient(180deg, rgba(179,179,179,1) 0%, rgba(83, 83, 83, 0.7) 50%, rgba(179,179,179,1) 100%);
+    background-color: var(--blanco-suave);
 }
+
+header, footer{
+    background-color: var(--gris-claro);
+}
+
 
 
 
