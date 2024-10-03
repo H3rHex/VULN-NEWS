@@ -1,9 +1,11 @@
 //SCRIPT GENERAL
 
+//CUANDO CARGA EL SCRIPT
 document.addEventListener("DOMContentLoaded", () =>{
     updateDay();
 });
 
+//FORMATEA Y ACTUALIZA LA HORA
 function updateDay(){
     // Obtén el elemento con el id "fechaActual"
     let dateElement = document.getElementById("fechaActual");
@@ -20,4 +22,6 @@ function updateDay(){
     
     // Asignamos la fecha formateada al contenido HTML del elemento
     dateElement.innerHTML = formatedDate;
+    console.log(formatedDate);
 }
+

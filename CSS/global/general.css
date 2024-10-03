@@ -18,8 +18,14 @@
 }
 
 :root{
+    /*BLANCOS*/
     --blanco-suave : #F5F5F5; /*Para fondos*/
+    /*GRISES*/
     --gris-claro : #dadada;  /*Para header y footer*/
+    --gris-claro-01: #cdcdcd;  /*Un poco mas oscuro que gris-claro*/
+    --gris-claro-02 : #c0c0c0;  /*Un poco mas oscuro que gris-claro01*/
+
+    /*BEIGE*/
     --beige-claro: #F0EAD6; /*Otros*/
 }
 
