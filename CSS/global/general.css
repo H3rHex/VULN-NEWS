@@ -17,17 +17,6 @@
     /*Link de recurso https://en.maisfontes.com/rockwell-condensed.font*/
 }
 
-/*ANIMACIONES*/
-@keyframes aparecerPorLaIzquierda {
-    from{
-        opacity: 0;
-        transform: translate(-50%);
-    }
-    to{
-        opacity: 1;
-    }
-}
-
 :root{
     --blanco-suave : #F5F5F5; /*Para fondos*/
     --gris-claro : #dadada;  /*Para header y footer*/

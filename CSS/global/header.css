@@ -1,116 +1,57 @@
-@import url(./general.css);
+@import url(general.css);
 
-/*HEADER*/
+/*ESTILOS EXCLUSIVOS PARA HEADER*/
 header{
     /*ORDEN*/
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     align-items: center;
 
-    /*BORDES*/
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    /*MARGENES*/
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    /*TAMAÑO Y BORDES*/
+    border: 4px solid rgb(0, 0, 0);
+    border-inline: none;
+    box-shadow: 0 0 10px;
+    width: 100vw;
+
+    /*FUENTE*/
+    font-family: "RockwellCondensed", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+header h4{ /*FECHA*/
+    color: black;
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: bold;
+}
+header img{
+    /*TAMAÑO*/ 
+    width: 200px;
+    height: 100px;
 
     /*FILTROS*/
-    box-shadow: 0px 0px 15px rgba(0, 0, 0);
+    filter: drop-shadow(1px 5px 4px);
 
-    /*MARGENES*/
-    margin-bottom: 50px;
-
-    /*TAMAÑO*/
-    width:100%;
-    height: 10%;
-
+    /*TRANSICIONES*/
+    transition: all 0.2s ease-in;
+}
+header img:hover{
+    transform: scale(1.1);
+    filter: drop-shadow(0px 7px 4px rgb(70, 0, 0));
 }
 
-/*Hay dos divs*/
-header div{
-    width: 50%;
-}
 
-/*MENU NAVEGACION*/
-header nav{
-    /*ORDEN*/
+header nav{/*Links*/
     display: flex;
-    justify-content: flex-start;
-    gap: 10px;
-
-    /*TAMAÑO*/
-    width: 100%;
+    justify-content: flex-end;
 }
-/*LINKS*/
-header nav a{
-    /*COLOR*/
-    color: #000000;
 
-    /*TAMAÑO Y FUENTE*/
-    font-size: 2.3rem;    
-    font-family: 'RockwellCondensed', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
-    /*OTROS*/
-    text-align: center;
+header a{
     text-decoration: none;
-    filter: drop-shadow(2px 3px  1px rgba(255, 255, 255, 0.637));
-}
-
-header nav div{
-    width: auto;
-    transition: 0.1s;
-}
-
-header nav div:hover{
-    transform: scale(1.1);
-    filter: drop-shadow(2px 1px 5px  rgb(0, 0, 0));
-
-    border-radius: 5px;
-}
-
-/*LOGO VULN NEWS*/
-#vulnewsicon{
-    /*TAMAÑO*/
-    width: 20%;
-    height: 10%;
-    
-    /*MARGENES*/
-    margin-left: 40px;
-    filter: drop-shadow(2px 1px 5px  rgb(0, 0, 0));
-    transition: all 0.1s ease-out;
-}
-
-/*LOGO VULN NEWS*/
-#vulnewsicon:hover{
-    transform: scale(1.1);
-}
-
-/*MEDIA QUERIES*/
-
-/*MOVILES*/
-@media (max-width: 768px){
-    /*HEADER*/
-    header{
-        /*TAMAÑO*/
-        width:100%;
-        height: 14%;
-    }
-
-    header div{
-        /*MARGENES*/
-        margin-right: 20px;
-    }
-
-    /*LINKS*/
-    header nav a{
-        /*TAMAÑO Y FUENTE*/
-        font-size: 25px;    
-    }
-
-    
-
-    /*LOGO VULN NEWS*/
-    #vulnewsicon{
-        width: 50%;
-        height: 40%;
-    }
-
-
+    color: black;
+    font-size: 2rem;
 }
