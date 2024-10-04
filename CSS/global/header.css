@@ -22,10 +22,6 @@ header{
     justify-content: center;
     align-items: center;
 
-    /*MARGENES*/
-    margin-top: 5px;
-    margin-bottom: 60px;
-
     /*TAMAÑO Y BORDES*/
     border: 4px  solid var(--gris-claro-02);
     border-inline: none;
