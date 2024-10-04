@@ -1,66 +1,108 @@
-@import url(./global/general.css);
+/*TITULOS DE TIPS Y NOTICIAS*/
+main .titulo{
+    /*BORDES*/
+    border: 2px solid black;
+    border-inline: 2px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.342);
 
+    /*TAMAÑOS*/
+    width: 50%; 
+    margin-bottom: 50px;
 
-/*PAGINA PRINCIPAL*/
-main{
-    width: 60%;   
+    /*FONDO*/
+    background-color: #dadada40; /*40% opacidad*/
+
 }
 
-#tipsDeSeguridad{
-    /*ORDEN*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+main .titulo h2{
+    margin: 10px;
 
-    /*TAMAÑO*/
-    width: 75%;
+    /*TEXTO*/
+    color: rgb(22, 22, 22);
+
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: RockwellCondensed;   
 }
 
-#tipsDeSeguridad h2{
-    /*ORDEN*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/*CUERPO DE TIPS Y NOTICIAS*/
 
-    /*COLOR*/
-    background-color: var(--beige-claro);
-    box-shadow: 0 0 5px  rgba(0, 0, 0, 0.2);
+main section{
+    /*TAMAÑOS*/
+    width: 30%;
+    margin-top: 25px; margin-bottom: 50px;
+}
 
-    /*TAMAÑOS Y BORDER*/
+main section h3{
+    /*TEXTO*/
+    text-indent: -5%;
+    font-size: 25px;
+    font-family: 'SourceCode-Regular', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bolder;
+
+    /*MARGENES Y TAMAÑOS*/
+    margin: 7px;
+}
+main section h3::after{
+    content: '';
+    display: inline-block;
+    width: 7px;
+    height: 3px;
     border-radius: 10px;
-    width: 500px;
+    transform: translateX(5px) translateY(-50%);
+    background-color: #000;
 
-    padding: 10px;
-    margin: 20px;
-
-    /*ANIMACION DE SCROLL*/
-    view-timeline-name: --seccionTittle;
-        view-timeline-axis: block;
-    
-        animation-timeline: --seccionTittle;
-        animation-name: aparecerPorLaIzquierda;
-    
-        animation-range: entry 1% cover 30%;
-        animation-fill-mode: both;
+}
+main section h3::before{
+    content: '';
+    display: inline-block;
+    width: 7px;
+    height: 3px;
+    border-radius: 10px;
+    transform: translateX(-5px) translateY(-50%);
+    background-color: #000;
 
 }
 
-#tipsDeSeguridad h3{
-    /*Estilos texto*/
+main section p{
+    /*TEXTO*/
     text-align: justify;
-    font-family: 'SourceCode-Italic';
-    font-size: 1.2rem;
-
-    width: 65%;
+    font-family: 'SourceCode-Regular', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
 }
 
-#tipsDeSeguridad p{
-    /*Estilos texto*/
-    text-align: justify;
-    width: 60%;
+/*LEER MAS --TIPS*/
 
-    /*PADDINGS Y MARGENES*/
-    padding: 20px;
+#masconsejos{
+    display: flex;
+    justify-content: center;
 }
+#masconsejos a{
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'SourceCode-Regular', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #ff0000;
+    transition: all 0.5s ease;
+}
+
+#masconsejos a:hover{
+    transform: scale(1.1);
+}
+
+
+
+/*NOTICIAS*/
+.noticias section{
+    display: flex;
+    gap: 50px
+}
+.noticias img{
+    filter: drop-shadow(0 0 10px #ff0000);
+
+    width: 300px;
+    height: 300px;
+}
+
