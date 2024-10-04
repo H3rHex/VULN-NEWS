@@ -19,14 +19,15 @@
 
 :root{
     /*BLANCOS*/
-    --blanco-suave : #F5F5F5; /*Para fondos*/
+    --blanco-suave : #f5f5f5; /*Para fondos*/
+    --blanco-suave01 : #f4f4f4; /*Para fondos*/
     /*GRISES*/
     --gris-claro : #dadada;  /*Para header y footer*/
     --gris-claro-01: #cdcdcd;  /*Un poco mas oscuro que gris-claro*/
     --gris-claro-02 : #c0c0c0;  /*Un poco mas oscuro que gris-claro01*/
 
     /*BEIGE*/
-    --beige-claro: #F0EAD6; /*Otros*/
+    --beige-claro: #f0ead6; /*Otros*/
 }
 
 /*SCROLL BAR*/
@@ -35,7 +36,7 @@
 }
 ::-webkit-scrollbar{
     width: 6px;
-    height: 1px;
+    height: 0.5px;
     background-color: #000000;
 }
 
@@ -59,11 +60,25 @@ body{
     height: 100vh;
 
     /*FONDO*/
-    background-color: var(--blanco-suave);
+    background-color: var(--blanco-suave01);
 }
 
 header, footer{
+    width: 100%;
     background-color: var(--gris-claro);
+}
+
+header{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    transition: all 0.3s ease-in-out; /* Transición suave en el cambio de 'top' */
+
+}
+
+main{
+    margin-top: 200px;
+    margin-bottom: 50px;
 }
 
 

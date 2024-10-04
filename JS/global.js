@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () =>{
     updateDay();
 });
 
+
 //FORMATEA Y ACTUALIZA LA HORA
 function updateDay(){
     // Obtén el elemento con el id "fechaActual"

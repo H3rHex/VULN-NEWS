@@ -12,26 +12,31 @@
     }
     
 }
+
+
 /*ESTILOS EXCLUSIVOS PARA HEADER*/
 header{
+
     /*ORDEN*/
     display: flex;
     justify-content: center;
     align-items: center;
 
     /*MARGENES*/
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 5px;
+    margin-bottom: 60px;
 
     /*TAMAÑO Y BORDES*/
     border: 4px  solid var(--gris-claro-02);
     border-inline: none;
-    /*box-shadow: 0 0 10px;*/
+    box-shadow: 0 0 20px  rgba(0, 0, 0, 0.452);
     width: 100vw;
 
     /*FUENTE*/
-    font-family: "RockwellCondensed", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    font-family: "RockwellCondensed", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
 }
+
 
 header h4{ /*FECHA*/
     color: black;
@@ -195,7 +200,7 @@ header nav a:hover::after{
 
 }
 
-@media (max-width : 320px) {
+@media (max-width : 364px) {
     header{
         height: 20vh;
     }
