@@ -1,4 +1,13 @@
 @import url(../global/general.css);
+#noticiasBox{
+    background-color: #ffffff;
+    border-radius: 25px;
+    border: 3px solid var(--gris-claro);
+    margin-inline: 2px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  
+}
 
 main{
     margin-top: 200px;
@@ -80,7 +89,15 @@ main img{
     main p{
         width: 80%;
     }
+    #noticiasBox{
+        max-width: 75dvw;
+      
+    }
     
+    #noticiasBox img{
+        width: 30dvw;
+        height: 30dvw;
+    }
 }
 /*MEDIA QUERYS 764-MOBILE*/
 @media (max-width: 764px) {
@@ -88,13 +105,20 @@ main img{
         margin-top: 300px;
     }
 
-   
-
     main .tituloGeneral{
         /*TAMAÑOS*/
         width: 80%
     }
     
+    #noticiasBox{
+        max-width: 75dvw;
+      
+    }
+    
+    #noticiasBox img{
+        width: 30dvw;
+        height: 30dvw;
+    }
 }
 
 
