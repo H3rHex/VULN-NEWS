@@ -50,6 +50,9 @@
     margin: 0 auto;
 }
 
+hr{
+    margin: 50px;
+}
 body{
     /*ORDEN*/
     display: flex;
@@ -82,12 +85,6 @@ main{
     margin-bottom: 50px;
 }
 
-#SEPARADOR{
-    width: 60%;
-    height: 5px;
-    background-color: black;
-    margin: 100px
-}
 
 
 
