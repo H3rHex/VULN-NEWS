@@ -45,13 +45,7 @@ footer img:hover{
 }
 
 #footerInfo{
-    background-color: var(--gris-claro);
-    border: 5px solid var(--blanco-suave);
-    border-radius: 15px;
-    padding: 1%;
-    
-
-    display: flex;
+    margin-left: -290px;
 }
 #footerInfo ul{
     list-style: square;
