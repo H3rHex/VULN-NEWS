@@ -1,0 +1,100 @@
+@import url(../global/general.css);
+
+main{
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+
+main div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+/*TITULOS DE TIPS Y NOTICIAS*/
+main .tituloGeneral{
+    /*BORDES*/
+    border: 2px solid black;
+    border-inline: 2px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.342);
+
+    /*TAMAÑOS*/
+    width: 50%;
+    margin-bottom: 50px;
+
+    /*FONDO*/
+    background-color: #dadada40; /*40% opacidad*/
+
+}
+
+main  h2{
+    margin: 10px;
+
+    /*TEXTO*/
+    color: rgb(22, 22, 22);
+
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: RockwellCondensed;   
+}
+
+main h3{
+    margin: 10px;
+    font-family: 'RockwellCondensed';
+    font-size: 1.5rem;
+    font-weight: 50;
+    letter-spacing: 2px;
+    text-align: center;
+    width: 50%;
+}
+
+main p{
+    font-family: 'SourceCode-Regular', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: justify;
+    margin: 15px;
+    width: 35%;
+
+}
+
+main a{
+    color: #ff0000;
+}
+
+main img{
+    /*TAMAÑO Y BORDE*/
+    width: 400px;
+    height: 300px;
+    border-radius: 15px;
+    /*EFECTO*/
+    box-shadow: 0 10px 10px #3838385b;
+    /*Margenes*/
+    margin-bottom: 10px;
+}
+
+
+/*MEDIA QUERYS 1024PX -TABLES*/
+@media (max-width: 1024px) {
+    main p{
+        width: 80%;
+    }
+    
+}
+/*MEDIA QUERYS 764-MOBILE*/
+@media (max-width: 764px) {
+    main{
+        margin-top: 300px;
+    }
+
+   
+
+    main .tituloGeneral{
+        /*TAMAÑOS*/
+        width: 80%
+    }
+    
+}
+
+

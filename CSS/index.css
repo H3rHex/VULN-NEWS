@@ -1,3 +1,4 @@
+@import url(./global/general.css);
 /*TITULOS DE TIPS Y NOTICIAS*/
 main .titulo{
     /*BORDES*/
@@ -79,7 +80,7 @@ main section p{
     display: flex;
     justify-content: center;
 }
-#masconsejos a{
+main a{
     font-size: 20px;
     font-style: italic;
     font-weight: bold;
@@ -88,7 +89,7 @@ main section p{
     transition: all 0.5s ease;
 }
 
-#masconsejos a:hover{
+main a:hover{
     transform: scale(1.1);
 }
 
@@ -105,4 +106,47 @@ main section p{
     width: 300px;
     height: 300px;
 }
+.noticias p{
+    text-align: justify;
+}
 
+
+/*MEDIA QUERYS 1024PX -TABLES*/
+@media (max-width: 1024px) {
+    main section{
+        /*TAMAÑOS*/
+        width: 50%;
+    }
+    main .titulo{
+        /*TAMAÑOS*/
+        width: 70%;  
+    }
+
+    .noticias section{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .noticias img{
+        width: 200px;
+        height: 200px;
+    }
+}
+/*MEDIA QUERYS 624-MOBILE*/
+@media (max-width: 624px) {
+    main section{
+        /*TAMAÑOS*/
+        width: 60%;
+    }
+
+    .noticias section{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .noticias img{
+        width: 150px;
+        height: 150px;
+    }
+
+}
