@@ -74,6 +74,7 @@ main section p{
 
 }
 
+
 /*LEER MAS --TIPS*/
 
 #masconsejos{
@@ -101,7 +102,7 @@ main a:hover{
     gap: 50px
 }
 .noticias img{
-    filter: drop-shadow(0 0 10px #ff0000);
+    filter: drop-shadow(0 0 10px #000000);
 
     width: 300px;
     height: 300px;
