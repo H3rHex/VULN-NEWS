@@ -28,7 +28,7 @@ footer{
     height: 120px;
     width: 100%;
 
-    margin-bottom: 60px;
+    margin-bottom: 10px;
 }
 
 footer a{
@@ -45,11 +45,10 @@ footer img:hover{
     filter: drop-shadow(1px 1px 20px #000000);
 }
 
-#footerInfo{
-    margin-left: -290px;
-}
 #footerInfo ul{
-    list-style: square;
+    margin-top: 10px;
+    text-align: center;
+    list-style: none;
 }
 #footerInfo h4{
     font-weight: 100;
@@ -57,6 +56,11 @@ footer img:hover{
 }
 #footerInfo li{
     font-size: 1.2rem;
+}
+
+#footerInfo img{
+    height: 40px;
+    width: 40px;
 }
 
 

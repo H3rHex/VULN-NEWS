@@ -94,13 +94,12 @@ main a:hover{
     transform: scale(1.1);
 }
 
-
-
 /*NOTICIAS*/
 .noticias section{
     display: flex;
     gap: 50px
 }
+
 .noticias img{
     filter: drop-shadow(0 0 10px #000000);
 
@@ -108,7 +107,7 @@ main a:hover{
     height: 300px;
 }
 .noticias p{
-    text-align: justify;
+    text-align: center;
 }
 
 #content {
