@@ -30,35 +30,29 @@
         
         <div class="tituloGeneral"><h2>PORTAL DE NOTICIAS</h2></div>
        
-        <div noticias-container>
-            <section class="categorias-noticia">
-            
-                <div id="categorias">
-                    <h3>Categorías:</h3>
-                        <ul>
-                            <li><a href="#">Ciberseguridad</a></li>
-                            <li><a href="#">Tecnología</a></li>
-                            <li><a href="">Actualidad</a></li>
-                            <li><a href="">Ver más...</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div id=categorias-noticia-noticia>
-                    <h3>¡Adiós a los Robos! </h3>
-                    <img src="../ASSETS/IMAGES/NOTICIAS/IPHONE-18-09-24.webp"
-                        alt="Noticia destacada">
-                    <p>Apple ha lanzado iOS 18 con una nueva funcionalidad diseñada para combatir el despiece de teléfonos robados. Esta
-                        actualización incluye medidas de seguridad que dificultan la descomposición de los dispositivos y su venta en el
-                        mercado negro.
-                        <br><br><br>
-                        El nuevo sistema permite a los usuarios registrar sus dispositivos en un sistema central, lo que hace que cualquier intento de desarmar un iPhone robado sea más fácil de rastrear. Además, la actualización incluye alertas para que los usuarios puedan detectar si su teléfono ha sido manipulado o cambiado.
-                        <br><br><br>
-                        Con esta iniciativa, Apple busca no solo proteger a sus usuarios, sino también reducir el robo de teléfonos y su reventa. Expertos en seguridad han elogiado el enfoque de la compañía, resaltando que esta medida podría sentar un precedente para la industria.
-                    </p>
-                    <a href="./NOTICIAS/2024/SEPTIEMBRE/18-09-24-ADIOS-A-LOS-ROBOS.html">Ver más</a>
-                </div>
-            
-            </section>
+        <button id="desplegable" data-target="content1" onclick="toggleContent(this)">
+            <h2>Categorías</h2>
+        </button>
+        <div id="content1" style="display: none;">
+            <ul type="none">
+                <li><a href="#">Ciberseguridad</a></li>
+                <li><a href="#">Tecnología</a></li>
+                <li><a href="#">Actualidad</a></li>
+                <li><a href="#">Ver más...</a></li>
+            </ul>
+        </div>
+        <hr>
+        <article>
+            <div id=noticiaDestacada>
+                <h3>Hacker "Farlopa" revela el “paso a paso” del Ataque a CCOO.</h3>
+                <img src="../ASSETS/IMAGES/NOTICIAS/1366_521.jpeg"
+                    alt="Noticia destacada">
+                <p>
+                    Un ciberataque dirigido a Comisiones Obreras (CCOO), uno de los sindicatos más grandes de España, ha sido llevado a cabo por un usuario conocido como "Farlopa". En un sorprendente giro, este hacker publicó un detallado informe sobre cómo logró acceder a los sistemas del sindicato, desglosando el proceso paso a paso.
+                </p>
+                <a href="./NOTICIAS/2024/SEPTIEMBRE/18-09-24-ADIOS-A-LOS-ROBOS.html">Ver más</a>
+            </div>
+        </article>
 
             <hr>
 
@@ -114,6 +108,7 @@
 
     <!--SCRIPTS-->
     <script src="../JS/global.js"></script>
+    <script src="../JS/buttons.js"></script>
 </body>
 
 </html>
