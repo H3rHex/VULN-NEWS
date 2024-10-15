@@ -1,4 +1,5 @@
 
+
 /*ESTILOS EXCLUSIVOS PARA FOOTER*/
 footer{
     /*ORDEN*/
@@ -28,7 +29,7 @@ footer{
     height: 120px;
     width: 100%;
 
-    margin-bottom: 10px;
+    margin-bottom: 60px;
 }
 
 footer a{
@@ -45,10 +46,11 @@ footer img:hover{
     filter: drop-shadow(1px 1px 20px #000000);
 }
 
+#footerInfo{
+    margin-left: -290px;
+}
 #footerInfo ul{
-    margin-top: 10px;
-    text-align: center;
-    list-style: none;
+    list-style: square;
 }
 #footerInfo h4{
     font-weight: 100;
@@ -56,11 +58,6 @@ footer img:hover{
 }
 #footerInfo li{
     font-size: 1.2rem;
-}
-
-#footerInfo img{
-    height: 40px;
-    width: 40px;
 }
 
 
@@ -99,8 +96,3 @@ footer img:hover{
     }
 
 }
-
-
-
-
-
