@@ -21,13 +21,21 @@
         <h4 id="fechaActual"></h4>
         <img src="./ASSETS/ICONS/ICONO NEWS.webp" alt="iconoNews">
         <nav>
-            <a href="/">Pagina Principal</a>
+            <a href="index.html">Home</a>
             <a href="./HTML/Noticias.html">Noticias</a>
             <a href="./HTML/Tips.html">Tips</a>
         </nav>
     </header>
 
     <main>
+        <div class="overlay" id="popup">
+            <div class="popup">
+                <h2>¡Bienvenido!</h2>
+                <img src="/ASSETS/ICONS/ICONO.webp" style="max-width: 40px;" alt=""> 
+                <p id="mensajeBienvenida"></p>
+                <button class="close-btn" id="closeBtn">Cerrar</button>
+            </div>
+        </div>
         <div class="tips">
             <div class="titulo">
                 <h2>CONSEJOS SEGUROS</h2>
@@ -35,28 +43,24 @@
            
             <section id="consejo1" class="consejos">
                 <div>
-                    <h3>Consejo 1</h3>
-                </div>
-                <div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque voluptas laborum soluta quae nam provident reiciendis
-                        voluptates vero porro id, iste, magni consequuntur aspernatur obcaecati reprehenderit velit beatae quasi ducimus.
-                    </p>
+                    <h1>Consejo 1: Usa contraseñas fuertes</h1>
+                    <br>
+                    <p>Utiliza contraseñas que contengan una combinación de letras mayúsculas, minúsculas, números y símbolos. Evita usar información personal que sea fácil de adivinar, como fechas de nacimiento o nombres.</p>
                 </div>
             </section>
 
+            <hr>
+
             <section id="consejo1" class="consejos">
                 <div>
-                    <h3>Consejo 2</h3>
-                </div>
-                <div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque voluptas laborum soluta quae nam provident reiciendis
-                        voluptates vero porro id, iste, magni consequuntur aspernatur obcaecati reprehenderit velit beatae quasi ducimus.
-                    </p>
+                    <h1>Consejo 2: Activa la autenticación en dos pasos</h1>
+                    <br>
+                    <p>Siempre que sea posible, habilita la autenticación en dos pasos para tus cuentas. Esto agrega una capa adicional de seguridad, requiriendo un segundo código que se envía a tu dispositivo.</p>
                 </div>
             </section>
 
            <section aria-label="LEER MAS" id="masconsejos">
-                <a href="./HTML/Tips.html">Mas consejos</a>
+                <a href="./HTML/Tips.html">Más consejos</a>
            </section>
         </div>
 
@@ -67,22 +71,18 @@
            
 
             <section id="noticia 1" class="noticias">
-                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.iWjjzJXag_JDcSKmKNmdEAHaE7%26pid%3DApi&f=1&ipt=427c91ac9ae8db4c1e05ced9cbc3f4c74106bf411ed4152721058a5a4daecb2b&ipo=images" alt="imagen noticia">
+                <img src="./ASSETS/IMAGES/NOTICIAS/Hacker compañia electrica vuln corp.webp" alt="imagen noticia">
                 <p>
-                    Lorem ipsum dolor sit, amet consectetur 
-                    adipisicing elit. Esse eos natus ratione, 
-                    laborum adipisci, eius accusamus
-                    <br><a href="">Leer mas</a>
+                    La Guardia Civil, en colaboración con los Mossos d'Esquadra, ha detenido en Madrid a un hacker que robó los datos de 37.000 clientes de una compañía eléctrica.
+                    <br><a href="">Leer más</a>
                 </p>
             </section>
             <div style="width: 50%; height: 3px;"></div>
             <section>
-                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.nM_g3zXXBrNLO_-t7YJoRgHaEK%26pid%3DApi&f=1&ipt=816ae2e2a514ceba7162bf97945f2c07918ad430d1653114592527a983a73c99&ipo=images" alt="imagen noticia">
+                <img src="./ASSETS/IMAGES/NOTICIAS/ciberataque-orange-2024.jpg" alt="imagen noticia">
                 <p>
-                    Lorem ipsum dolor sit, amet consectetur 
-                    adipisicing elit. Esse eos natus ratione, 
-                    laborum adipisci, eius accusamus
-                    <br><a href="">Leer mas</a>
+                    Un hacker logró causar un apagón de internet en gran parte de España, afectando a millones de usuarios de Orange.
+                    <br><a href="">Leer más</a>
                 </p>
             </section>
         </div>
@@ -91,13 +91,12 @@
 
     <footer>
         <div class="footerContainer">
-            <img src="./ASSETS/ICONS/ICONO.webp" alt="">
+            <img src="./ASSETS/ICONS/ICONO.webp" alt="">          
             <div id="footerInfo">
-                <h4>CONTACTANOS</h4>
                 <ul>
                     <li>c/Doctor Ornilla 2 48004 Bilbao</li>
                     <li>info.vulncorp@gmail.com</li>
-                    <li><a href="">Visita nuestra sitio web Vuln Corp</a></li>
+                    <li><a href="http://www.vulncorp.tx">Sitio web de Vuln Corp</a></li>
                 </ul>
             </div>
            
@@ -106,6 +105,7 @@
 
     <!--SCRIPTS-->
     <script src="./JS/global.js"></script>
+    <script src="./JS/welcome.js"></script>
 </body>
 
 </html>

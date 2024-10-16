@@ -69,39 +69,65 @@ main img{
 
 /*CATEGORIAS Y NOTICIA*/
 .categorias-noticia{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-
+    background-color: white;
+    box-shadow: 0 10px 10px #0000005b;
+    padding: 10px;
+    border-color: black;
+    border-radius: 30px;
+    margin-bottom: 50px;
     width: 40%;
 }
 
 /*CATEGORIA*/
-#categorias li{
+#desplegable{
+    display: flex;
+    box-shadow: 0 10px 10px #3838385b;
+    transition: all 0.5s ease-in;
+}
+
+#desplegable:hover{
+    transform: scale(1.2);
+}
+
+#content1 li{
     /*MARGENES*/
     margin-right: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
+    text-align: center;
+   
 
     /*TEXTO*/
     font-size: 1.2rem;
     font-family: 'SourceCode-Regular', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-#categorias li a{
-    color: #ff0000;
+#content1 li a{
+    color: #000000;
     font-weight: 550;
-    text-shadow: 2px 0px 0 black;
     transition: all 0.1s linear;
+    text-align: center;
 }
-#categorias li a:hover{
+#content1 li a:hover{
+    color: #ff0000;
     font-weight: bold;
     font-size: 1.25rem;
+    text-align: center;
 }
 
 
 /*NOTICIA DESTACA*/
-#categorias-noticia-noticia p{
+#noticiaBox {
+    background-color: white;
+    box-shadow: 0 10px 10px #3838385b;
+    padding: 10px;
+    border-radius: 30px;
+    margin-inline: auto; /* Añadido para centrar horizontalmente */
+    margin-bottom: 10px;
+    max-width: 60dvw;
+    height: 750px;
+}
+
+#noticiaBox p{
 
     /*TAMAÑO Y MARGENES*/
     width: 60%;
@@ -131,6 +157,15 @@ main img{
 /*MEDIA QUERYS 1024PX -TABLES*/
 @media (max-width: 1024px) {
     /*CATEGORIAS Y NOTICIA*/
+    #noticiaBox img{
+        max-width: 50dvw;
+        max-height: 50dvw;
+
+        display: block;
+        justify-content: center;
+        align-items: center;
+        height: 1150px;
+    }
     .categorias-noticia {
         width: 70%;
     }
@@ -144,6 +179,17 @@ main img{
 }
 /*MEDIA QUERYS 764-MOBILE*/
 @media (max-width: 764px) {
+
+    #noticiaBox{
+        max-width: 50dvw;
+        height: 1150px;
+    }
+
+    #noticiaBox img{
+        max-width: 50dvw;
+        max-height: 50dvw;
+    }
+
     main{
         margin-top: 300px;
     }

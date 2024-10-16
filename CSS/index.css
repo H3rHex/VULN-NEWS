@@ -74,6 +74,7 @@ main section p{
 
 }
 
+
 /*LEER MAS --TIPS*/
 
 #masconsejos{
@@ -93,23 +94,67 @@ main a:hover{
     transform: scale(1.1);
 }
 
-
-
 /*NOTICIAS*/
 .noticias section{
     display: flex;
     gap: 50px
 }
+
 .noticias img{
-    filter: drop-shadow(0 0 10px #ff0000);
+    filter: drop-shadow(0 0 10px #000000);
 
     width: 300px;
     height: 300px;
 }
 .noticias p{
-    text-align: justify;
+    text-align: center;
 }
 
+#content {
+    /* Aquí puedes agregar los estilos para el contenido de tu página */
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+.close-btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    background: #ff0000;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    transition: 0.5s ease-in-out;
+    background: #ff0000;
+    transform: scale(1.2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.blur {
+    filter: blur(10px);
+}
 
 /*MEDIA QUERYS 1024PX -TABLES*/
 @media (max-width: 1024px) {

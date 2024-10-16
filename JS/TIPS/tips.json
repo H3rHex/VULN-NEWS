@@ -1,0 +1,22 @@
+{
+    "TIPS1":{
+        "tip-title":"Usa contraseñas fuertes",
+        "tip-body":"Utiliza contraseñas que contengan una combinación de letras mayúsculas, minúsculas, números y símbolos. Evita usar información personal que sea fácil de adivinar, como fechas de nacimiento o nombres."
+    },
+    "TIPS2":{
+        "tip-title":"Activa la autenticación en dos pasos",
+        "tip-body":"Siempre que sea posible, habilita la autenticación en dos pasos para tus cuentas. Esto agrega una capa adicional de seguridad, requiriendo un segundo código que se envía a tu dispositivo."
+    },
+    "TIPS3":{
+        "tip-title":"Mantén tus software actualizados",
+        "tip-body":"Instala actualizaciones de software y parches de seguridad en tu sistema operativo y aplicaciones. Esto ayuda a protegerte contra vulnerabilidades y amenazas recientes."
+    },
+    "TIPS4":{
+        "tip-title":"Ten cuidado con los correos electrónicos sospechosos",
+        "tip-body":"No abras enlaces ni descargues archivos de correos electrónicos de remitentes desconocidos. Los atacantes a menudo utilizan técnicas de phishing para robar información personal."
+    },
+    "TIPS5":{
+        "tip-title":"Utiliza redes Wi-Fi seguras",
+        "tip-body":"Evita conectarte a redes Wi-Fi públicas sin protección. Si es necesario, utiliza una VPN para cifrar tu conexión y proteger tus datos mientras navegas."
+    }
+}
