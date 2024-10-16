@@ -147,9 +147,14 @@ header nav a:hover::after{
 
     /*LINKS*/
     header nav{
-        margin-right: 10px;
-        width: 60%;
-        gap:4px;
+        display: flex;
+        flex-direction: column;
+        align-items: self-start;
+        justify-content: start;
+
+        margin-right: 0;
+        width: 45%;
+
     }
 
     header nav a{
@@ -177,17 +182,6 @@ header nav a:hover::after{
         display: none;
     }
 
-    /*LINKS*/
-    header nav{
-        display: flex;
-        flex-direction: column;
-        align-items: self-start;
-        justify-content: start;
-
-        margin-right: 0;
-        width: 45%;
-
-    }
 
     header nav a{
         font-size: 1.7rem;

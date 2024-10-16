@@ -20,7 +20,7 @@
 :root{
     /*BLANCOS*/
     --blanco-suave : #f5f5f5; /*Para fondos*/
-    --blanco-suave01 : #f4f4f4; /*Para fondos*/
+    --blanco-suave-01 : #f4f4f4; /*Para fondos*/
     /*GRISES*/
     --gris-claro : #dadada;  /*Para header y footer*/
     --gris-claro-01: #cdcdcd;  /*Un poco mas oscuro que gris-claro*/

@@ -7,9 +7,6 @@ footer{
     justify-content: center;
     align-items: center;
     
-
-
-
     /*TAMAÑO Y BORDES*/
     border: 4px  solid var(--gris-claro-02);
     border-inline: none;
@@ -27,10 +24,12 @@ footer{
     align-items: center;
 
     height: 120px;
-    width: 100%;
+    width: 40%;
 
     margin-bottom: 60px;
 }
+
+
 
 footer a{
     color: #ff0000;
@@ -46,9 +45,6 @@ footer img:hover{
     filter: drop-shadow(1px 1px 20px #000000);
 }
 
-#footerInfo{
-    margin-left: -290px;
-}
 #footerInfo ul{
     list-style: square;
 }
@@ -78,19 +74,17 @@ footer img:hover{
     .footerContainer{
         height: 140px;
         margin-bottom: 30px;
+        width: 100%;
     }
     
     #footerInfo{
         width: 50%;
     }
+    
 }
 
 @media (max-width : 364px) {
-    footer img{
-        width: 80px;
-        height: 70px;
-    }
-
+   
     #footerInfo{
         width: 60%;
     }
