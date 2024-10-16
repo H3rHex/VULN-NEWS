@@ -43,7 +43,7 @@ main .tituloGeneral {
 }
 
 main section {
-    width: 50%;
+    width: 70%;
     padding: 25px;
     margin-bottom: 50px;
     background-color: var(--blanco-suave);
@@ -53,20 +53,21 @@ main section {
     transition: all 0.1s ease;
 }
 
-.tipsContainer {
-    display: grid;
-    align-items: start;
-    grid-template-columns: 1fr 1fr; 
-    gap: 10px; 
-    width: 100%;
-}
-
-
 main section:hover {
     background-color: var(--blanco-suave-02);
     transform: scale(1.1);
 
 }
+
+
+.tipsContainer {
+    display: grid;
+    align-items: start;
+    grid-template-columns: 1fr 1fr; 
+    width: 70%;
+
+}
+
 
 .tipTitle {
     text-align: justify;
