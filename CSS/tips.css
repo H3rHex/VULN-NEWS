@@ -72,6 +72,7 @@ main section:hover {
 .tipTitle {
     text-align: justify;
     user-select: none;
+    cursor: pointer;
 }
 
 .tipContent {

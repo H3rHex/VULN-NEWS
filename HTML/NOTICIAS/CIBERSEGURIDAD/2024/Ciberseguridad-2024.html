@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--CSS FILES-->
+    <link rel="stylesheet" href="../../../../CSS/Categoria-Noticias.css">
+
+    <!--CSS GLOBALES-->
+    <link rel="stylesheet" href="../../../../CSS/global/header.css">
+    <link rel="stylesheet" href="../../../../CSS/global/footer.css">
+    <link rel="stylesheet" href="../../../../CSS/global/general.css">
+    
+    <link rel="icon" href="../../../../ASSETS/ICONS/ICONO NEWS.webp">
+     <title>VulnNews | Noticias 📰</title>
+</head>
+<body>
+    <!--CABECERA HEADER-->
+    <header>
+        <h4 id="fechaActual"></h4>
+        <img src="../../../../ASSETS/ICONS/ICONO NEWS.webp"   alt="iconoNews">
+        <nav>
+            <a href="../../../../index.html">Home</a>
+            <a href="../../../Noticias.html">Noticias</a>
+            <a href="../../../Tips.html">Tips</a>
+        </nav>
+    </header>
+    <main>
+        
+        <div class="tituloGeneral"><h2>2024-CIBERSEGURIDAD</h2></div>
+        
+        <div class="noticiasContainer"></div>
+    </main>
+
+    <footer>
+        <div class="footerContainer">
+            <img src="../../../../ASSETS/ICONS/ICONO.webp" alt="IconoVulncorp">          
+            <div id="footerInfo">
+                <ul>
+                    <li>c/Doctor Ornilla 2 48004 Bilbao</li>
+                    <li>info.vulncorp@gmail.com</li>
+                    <li><a href="http://www.vulncorp.tx">Sitio web de Vuln Corp</a></li>
+                </ul>
+            </div>
+           
+        </div>
+    </footer>
+
+    <!--SCRIPTS-->
+    <script src="../../../../JS/global.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            getTips();  // Llamamos a getTips cuando el DOM está listo
+        });
+
+        function getTips() {
+            // OBTIENE EL CONTENIDO DEL JSON
+            fetch('../ciberseguridad.json')
+                .then(response => response.json())
+                .then(data => {
+                    createStructure(data);  // Creamos la estructura con los datos del JSON
+                    getTipTittleClick();    // Llamamos a getTipTittleClick después de crear los títulos
+                })
+                .catch(error => console.error('Error cargando datos:', error));
+        }
+
+        function createStructure(noticiasData) {
+            // Seleccionamos el contenedor usando el selector correcto
+            const noticiasContainer = document.querySelector('.noticiasContainer');
+
+            if (!noticiasContainer) {
+                console.error('No se encontró el contenedor de tips');
+                return;
+            }
+            
+            // Iteramos sobre los tips
+            for (let i in noticiasData) {
+                const noticia =  noticiasData[i];
+                let noticiaNumber = i;
+
+                if (noticia['year'] == '2024') {
+
+                    //Crear seccion de la noticia
+                    const noticiaSection = document.createElement('section')
+                    noticiaSection.id = `noticia-${noticiaNumber}`;
+                    noticiaSection.classList.add("noticia");
+                    noticiasContainer.appendChild(noticiaSection);
+
+                    //Creamos el artile
+                    const articulo = document.createElement('article');
+                    articulo.classList.add("noticiaArticle");
+                    noticiaSection.appendChild(articulo);
+
+                    //Titulo noticia
+                    const noticiaTittle = document.createElement('h3');
+                    noticiaTittle.classList.add("tituloNoticia");
+                    noticiaTittle.innerHTML = noticia['title'];
+                    articulo.appendChild(noticiaTittle);
+
+                    //Imagen noticia
+                    const noticiaImage = document.createElement('img');
+                    noticiaImage.classList.add("noticiaImage");
+                    noticiaImage.src = "../../../../ASSETS/IMAGES/NOTICIAS/" + noticia['image'];
+                    articulo.appendChild(noticiaImage);
+
+                    //Cuerpo notivcia
+                    const noticiaBody = document.createElement('p');
+                    noticiaBody.classList.add("noticiaBody");
+                    noticiaBody.innerHTML = noticia['body'];
+                    articulo.appendChild(noticiaBody);
+
+                    //Ver mas link
+                    const verMasLink = document.createElement('a');
+                    verMasLink.classList.add("verMasLink");
+                    verMasLink.href = '.' + noticia['link'];
+                    verMasLink.innerHTML = "Ver más";
+                    articulo.appendChild(verMasLink);
+
+                }
+            }
+        }
+
+    </script>
+</body>
+
+</html>
