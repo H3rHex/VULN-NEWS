@@ -3,7 +3,14 @@
         "title": "Apple no es la única que planea un móvil ultra-delgado.",
         "body":"2025 apunta a ser un año bastante movidito para la gama alta. Con la intención de revitalizar las ventas de la familia iPhone, Apple estaría planeando lanzar un iPhone 17 Air. Un modelo especialmente delgado para plantear una alternativa distinta tanto a los iPhone Pro como a los modelos estándar. Un iPhone más llamativo y de masas.",
         "image":"1200_800.jpeg",
-        "link":"./2024/2024-Noticia1.html"
+        "link":"./2024/2024-Noticia1.html",
+        "year": "2024"
+    },"Noticia2":{
+        "title": "Tendencias tecnológicas que ganan fuerza en este 2023",
+        "body":"Las megatendencias son fundamentales para poder dar dirección y proyección a un futuro. Esto nos permite tomar mejores decisiones e implementar estrategias no solo en las empresas, sino también en la educación y en nuestra vida diaria.",
+        "image":"tecnologia-2023.jpeg",
+        "link":"./2023/2023-Noticia1.html",
+        "year": "2023"
     }
     
 }

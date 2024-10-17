@@ -126,8 +126,8 @@ main img{
 .noticiaBody{
     margin: 20px;
 }
-/*MEDIA QUERYS 764-MOBILE*/
-@media (max-width: 764px) {
+/*MEDIA QUERYS*/
+@media (max-width: 1024px) {
     /*ESTILOS NOTICIAS*/
     .noticiasContainer {
         display: grid;

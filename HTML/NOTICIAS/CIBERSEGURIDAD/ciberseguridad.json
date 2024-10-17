@@ -17,5 +17,11 @@
         "image":"1366_521.jpeg",
         "link":"./2023/2023-Noticia3.html",
          "year":"2023"
+    },"Noticia4":{
+        "title": "Lo fácil que es hackear un smartphone",
+        "body":"Hoy en día todos tenemos un smartphone, es más, seguramente abusemos de su uso, pasando más tiempo frente a su pantalla del que debiéramos, y si nos paramos un minuto a pensar, es curioso como ese pequeño dispositivo ha terminado almacenando cantidades ingentes de datos de nuestras vidas. En nuestro teléfono inteligente tenemos de todo, un batiburrillo de información que en conjunto si lo analizamos fríamente es una auténtica bomba de relojería.",
+        "image":"movil.jpg",
+        "link":"./2023/2023-Noticia4.html",
+         "year":"2023"
     }
 }

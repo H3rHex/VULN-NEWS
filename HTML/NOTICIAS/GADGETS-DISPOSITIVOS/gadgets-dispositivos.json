@@ -1,3 +1,9 @@
 {
-
+    "Noticia1":{
+        "title": "Cuidado si viajas con un Flipper Zero, ya que es ilegal en este país",
+        "body":"Flipper Zero está de moda. Un popular gadget que se ha convertido en una “navaja suiza del hacking” gracias a su gran versatilidad. Y las opciones que ofrece han hecho que sea un éxito en ventas. Aunque cuidado si viajas con esta herramienta, ya que puedes tener problemas.",
+        "image":"flipper.jpg",
+        "link":"./2024/2024-Noticia1.html",
+        "year": "2024"
+    }
 }

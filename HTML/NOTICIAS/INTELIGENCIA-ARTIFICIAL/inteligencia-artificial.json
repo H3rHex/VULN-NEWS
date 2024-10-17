@@ -1,4 +1,10 @@
 {
-    
+    "Noticia1":{
+        "title": "ONU: La regulación mundial de la IA es necesaria",
+        "body":"Un nuevo informe de un grupo de expertos de la ONU afirma este jueves que es necesario regular a escala mundial el floreciente campo de la inteligencia artificial (IA), y añade que el desarrollo y uso de esta tecnología “no puede dejarse únicamente al capricho de los mercados”.",
+        "image":"image1170x530cropped.jpg",
+        "link":"./2024/2024-Noticia1.html",
+        "year": "2024"
+    }
     
 }
