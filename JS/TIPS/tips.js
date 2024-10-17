@@ -55,6 +55,20 @@ function getTipTittleClick() {
     // Seleccionamos todos los elementos con la clase 'tipTitle'
     document.querySelectorAll('.tipTitle').forEach(title => {
         // Añadimos un evento 'click' a cada título
+        title.addEventListener('mouseover', () => {
+            // Seleccionamos el siguiente elemento hermano (el contenido del tip)
+            const tipBody = title.nextElementSibling;
+
+            // Verificamos el estado actual y alternamos entre 'block' y 'none'
+            if (tipBody.style.display === "none") {
+                tipBody.style.display = "block";
+                tipBody.classList.add('tipContent-show');
+            } else {
+                tipBody.style.display = "none";
+                tipBody.classList.add('tipContent-hide');
+            }
+        });
+
         title.addEventListener('click', () => {
             // Seleccionamos el siguiente elemento hermano (el contenido del tip)
             const tipBody = title.nextElementSibling;

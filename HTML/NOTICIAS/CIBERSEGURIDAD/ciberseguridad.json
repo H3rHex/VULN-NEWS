@@ -3,16 +3,19 @@
         "title": "Descubren el primer crypto drainer móvil en Google Play",
         "body":"Check Point Research ha descubierto la primera aplicación móvil de robo de criptomonedas en Google Play, haciéndose pasar por WalletConnect. La app, con más de 10.000 descargas, ha robado $70,000 a 150 víctimas mediante técnicas de ingeniería social y phishing.",
         "image":"Crypto wallet notica vuln corp.webp",
-        "link":"./2023/01-10-2023-HackeoCCOO.html"
+        "link":"./2024/2024-Noticia1.html",
+        "year":"2024"
     },"Noticia2":{
         "title": "El ataque contra Orange que desconectó a España de Internet",
         "body":"Un hacker logró causar un apagón de internet en gran parte de España, afectando a millones de usuarios de Orange. Este ataque cibernético reveló vulnerabilidades en la infraestructura de telecomunicaciones, generando preocupación entre los expertos en ciberseguridad.",
         "image":"ciberataque-orange-2024.jpg",
-        "link":"./2023/01-10-2023-HackeoCCOO.html"
+        "link":"./2024/2024-Noticia2.html",
+         "year":"2024"
     },"Noticia3":{
         "title": "Hacker \"Farlopa\" revela el “paso a paso” del Ataque a CCOO",
         "body":"Un ciberataque dirigido a Comisiones Obreras (CCOO), uno de los sindicatos más grandes de España, ha sido llevado a cabo por un usuario conocido como \"Farlopa\". En un sorprendente giro, este hacker publicó un detallado informe sobre cómo logró acceder a los sistemas del sindicato, desglosando el proceso paso a paso.",
         "image":"1366_521.jpeg",
-        "link":"./2023/01-10-2023-HackeoCCOO.html"
+        "link":"./2023/2023-Noticia3.html",
+         "year":"2023"
     }
 }
