@@ -12,5 +12,12 @@
         "image":"Hacker compañia electrica vuln corp.webp",
         "link":"./2024/2024-Noticia2.html",
         "year":"2024"
+    },
+    "Noticia3":{
+        "title": "¿La dark web supone una oportunidad de marketing, o es jugar con fuego?",
+        "body": "Facebook tiene una página en la dark web. Este dato podría bastar para ilustrar que no todo en la dark web es ilegal, y, además, que puede haber intereses comerciales legítimos a la hora de publicar contenidos en esta red. Sin embargo, la dark web es bastante más conocida por ser un espacio donde se comercia con artículos y servicios más bien opacos, por no decir que son simplemente ilegales. Pero entonces, ¿en qué consiste exactamente?",
+        "image": "darkweb.jpg",
+        "link": "./2024/2024-Noticia3.html",
+        "year": "2024"
     }
 }
